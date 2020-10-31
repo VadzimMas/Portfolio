@@ -1,5 +1,19 @@
 .second-block {
     position: relative;
+
+    &__background-shadow {
+        // display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 93%;
+        height: 80%;
+        object-fit: cover;
+        transform-origin: 0% -50%;
+        transform: perspective(500px) rotateX(4deg) translate3d(-50%, -50%, -10px);
+        box-shadow: 20px 0 60px 0 #000000;
+        z-index: 0;
+    }
     &__background {
         position: absolute;
         top: 0;
@@ -10,18 +24,6 @@
         object-fit: cover;
         transform-origin: 50% 0;
         transform: perspective(500px) rotateX(1deg);
-    }
-    &__background-shadow {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 93%;
-        height: 80%;
-        object-fit: cover;
-        transform-origin: 0% -50%;
-        transform: perspective(500px) rotateX(4deg) translate(-50%, -50%);
-        box-shadow: 20px 0 60px 0 #000000;
-        z-index: 0;
     }
 
     .container {
