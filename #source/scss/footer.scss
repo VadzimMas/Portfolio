@@ -1,0 +1,41 @@
+.footer {
+    position: relative;
+    .container {
+        max-width: 820px;
+        .copyright {
+            h2:nth-child(1) {
+                color: #6e6862;
+                font-family: "Lovelo - Black";
+                font-weight: 900;
+            }
+            h2:nth-child(2) {
+                color: #6e6862;
+                font-family: "Justus - Italic";
+                font-style: italic;
+            }
+        }
+        .top {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            .glare {
+                position: absolute;
+                top: 15px;
+                left: 43px;
+                opacity: 0.3;
+            }
+            span {
+                position: absolute;
+                top: 15%;
+                left: 50%;
+                transform: translate(-50%, 0);
+                color: #e3e3e3;
+                font-family: "Lovelo - Black";
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 27px;
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.first-block {
+    position: relative;
+
+    &__background-shadow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 93%;
+        height: 80%;
+        object-fit: cover;
+        transform-origin: 0% 50%;
+        transform: perspective(500px) rotateX(-4deg) translate(-50%, -50%);
+        box-shadow: 20px 0 60px 0 #000000;
+        z-index: 0;
+    }
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        object-fit: cover;
+        transform-origin: 50% 100%;
+        transform: perspective(500px) rotateX(-1deg);
+    }
+    .container {
+        position: relative;
+        max-width: 820px;
+        padding: 45px 0;
+        z-index: 1;
+    }
+
+    &__title {
+        border-bottom: 2px solid #232227;
+        border-top: 2px solid #232227;
+        padding: 5px 0;
+        margin: 0 0 40px 0;
+        h1 {
+            color: #232227;
+            font-family: "Lovelo - Black";
+            font-size: 50px;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 7px;
+            border-bottom: 7px solid #232227;
+            border-top: 7px solid #232227;
+            padding: 30px 0 20px 0;
+        }
+    }
+    &__content {
+        display: flex;
+        .picture {
+            position: relative;
+            flex: 1 1 50%;
+            margin: 0 34px 0 0;
+            border-top: 4px solid #232227;
+            & img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .text {
+            flex: 1 1 50%;
+            border-left: 1px solid #c0c0c0;
+            padding: 0 0 0 34px;
+            &__title {
+                color: #232227;
+                font-family: "Lovelo - Black";
+                font-size: 36px;
+                font-weight: 400;
+                line-height: 37px;
+                text-align: left;
+                letter-spacing: 1.8px;
+                margin: 0 0 26px 0;
+            }
+            &__subtitle {
+                color: #c45f5f;
+                font-family: "Lovelo - Black";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 27px;
+                text-align: left;
+                margin: 0 0 24px 0;
+            }
+            &__paragraph {
+                color: #5c5b5f;
+                font-family: "Justus - Oldstyle";
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+            }
+        }
+    }
+}
