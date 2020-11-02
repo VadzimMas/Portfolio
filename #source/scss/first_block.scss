@@ -1,5 +1,4 @@
 .first-block {
-    // border: 1px solid #000;
     position: relative;
     .container {
         position: relative;
@@ -7,7 +6,6 @@
         padding: 45px 0;
         z-index: 1;
     }
-
     &__background-shadow {
         position: absolute;
         top: 50%;
@@ -29,7 +27,7 @@
         z-index: 1;
         object-fit: cover;
         transform-origin: 50% 100%;
-        transform: perspective(500px) rotateX(-1deg) translate(0, 2px);
+        transform: perspective(500px) rotateX(-1deg) translate(0, 0);
     }
 
     &__title {
