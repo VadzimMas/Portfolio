@@ -1,5 +1,7 @@
 .first-block {
     position: relative;
+    transform-origin: 50% 100%;
+    transform: rotateX(-1deg) translate(0, 0);
     .container {
         position: relative;
         max-width: 820px;
@@ -8,14 +10,17 @@
     }
     &__background-shadow {
         position: absolute;
+        background-color: #c45f5f;
+
         top: 50%;
         left: 50%;
         width: 100%;
-        height: 80%;
+        height: 100%;
         object-fit: cover;
         transform-origin: 0% 50%;
-        transform: perspective(500px) rotateX(-4deg) translate3d(-50%, -50%, -40px);
-        box-shadow: 20px 0 60px 0 #000000;
+        transform: perspective(500px) rotateX(-6deg) translate3d(-50%, -50%, -80px);
+        box-shadow: 90px 0 60px -30px #000000;
+
         z-index: 0;
     }
     &__background {
@@ -26,8 +31,6 @@
         height: 100%;
         z-index: 1;
         object-fit: cover;
-        transform-origin: 50% 100%;
-        transform: perspective(500px) rotateX(-1deg) translate(0, 0);
     }
 
     &__title {
