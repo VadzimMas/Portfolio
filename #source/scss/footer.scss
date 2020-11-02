@@ -1,7 +1,11 @@
 .footer {
     position: relative;
+
     .container {
         max-width: 820px;
+        height: 70px;
+        display: flex;
+        align-items: center;
         .copyright {
             h2:nth-child(1) {
                 color: #6e6862;
@@ -16,7 +20,7 @@
         }
         .top {
             position: absolute;
-            top: 0;
+            top: -2px;
             left: 50%;
             transform: translate(-50%, 0);
             .glare {

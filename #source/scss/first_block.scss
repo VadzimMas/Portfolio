@@ -3,7 +3,6 @@
     transform-origin: 50% 100%;
     transform: rotateX(-1deg) translate3d(0, 0, -1px);
     &__background-shadow {
-        // display: none;
         position: absolute;
         background-color: #c45f5f;
         top: 50%;
@@ -16,7 +15,6 @@
         box-shadow: 90px 0 40px -30px #000000;
     }
     &__background {
-        // display: none;
         position: absolute;
         top: 0;
         left: 0;
