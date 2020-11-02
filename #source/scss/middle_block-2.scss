@@ -1,0 +1,255 @@
+.middle-block-2 {
+    position: relative;
+    &__background-shadow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 98%;
+        object-fit: cover;
+        transform-origin: 0% 50%;
+        transform: perspective(500px) rotateX(-4deg) translate3d(-50%, -50%, -40px);
+        box-shadow: 20px -50px 60px 0 #000000;
+        z-index: 0;
+    }
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        object-fit: cover;
+        transform-origin: 50% 100%;
+        transform: perspective(500px) rotateX(-1deg) translate(0, 0);
+    }
+
+    .container {
+        position: relative;
+        max-width: 820px;
+        padding: 55px 0;
+        z-index: 1;
+    }
+    .first-row {
+        display: flex;
+
+        & .content:first-child {
+            display: flex;
+            padding-bottom: 48px;
+            border-bottom: 1px solid #c0c0c0;
+            margin-right: 24px;
+
+            .picture {
+                flex: 1 1 50%;
+                position: relative;
+                margin: 0 24px 0 0;
+                & img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-top: 3px solid #000;
+                }
+            }
+
+            .text {
+                flex: 1 1 50%;
+
+                &__title {
+                    color: #232227;
+                    font-family: "Lovelo - Black";
+                    font-weight: 900;
+                    line-height: 27px;
+                }
+                &__subtitle {
+                    color: #232227;
+                    font-family: "Justus";
+                    font-style: italic;
+                    line-height: 24px;
+                }
+                &__paragraph {
+                    font-family: "Justus - Oldstyle";
+                    color: #232227b4;
+                    line-height: 24px;
+                }
+                &__link {
+                    color: #c45f5f;
+                    font-family: "Justus";
+                    font-style: italic;
+                    line-height: 36px;
+                    text-decoration: underline;
+                }
+            }
+        }
+        & .content:last-child {
+            display: flex;
+            padding-bottom: 48px;
+            border-bottom: 1px solid #c0c0c0;
+            margin-left: 24px;
+
+            .picture {
+                flex: 1 1 50%;
+                position: relative;
+                margin: 0 24px 0 0;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 1px;
+                    height: 100%;
+                    margin: 0 0 0 -24px;
+                    border-right: 1px solid #c0c0c0;
+                }
+                & img {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-top: 3px solid #000;
+                }
+            }
+
+            .text {
+                flex: 1 1 50%;
+
+                &__title {
+                    color: #232227;
+                    font-family: "Lovelo - Black";
+                    font-weight: 900;
+                    line-height: 27px;
+                }
+                &__subtitle {
+                    color: #232227;
+                    font-family: "Justus";
+                    font-style: italic;
+                    line-height: 24px;
+                }
+                &__paragraph {
+                    font-family: "Justus - Oldstyle";
+                    color: #232227b4;
+                    line-height: 24px;
+                }
+                &__link {
+                    color: #c45f5f;
+                    font-family: "Justus";
+                    font-style: italic;
+                    line-height: 36px;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .second-row {
+        display: flex;
+
+        & .content:first-child {
+            display: flex;
+            padding-top: 48px;
+            margin-right: 24px;
+
+            .picture {
+                flex: 1 1 50%;
+                position: relative;
+                margin: 0 24px 0 0;
+                & img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-top: 3px solid #000;
+                }
+            }
+
+            .text {
+                flex: 1 1 50%;
+
+                &__title {
+                    color: #232227;
+                    font-family: "Lovelo - Black";
+                    font-weight: 900;
+                    line-height: 27px;
+                }
+                &__subtitle {
+                    color: #232227;
+                    font-family: "Justus";
+                    font-style: italic;
+                    line-height: 24px;
+                }
+                &__paragraph {
+                    font-family: "Justus - Oldstyle";
+                    color: #232227b4;
+                    line-height: 24px;
+                }
+                &__link {
+                    color: #c45f5f;
+                    font-family: "Justus";
+                    font-style: italic;
+                    line-height: 36px;
+                    text-decoration: underline;
+                }
+            }
+        }
+        & .content:last-child {
+            display: flex;
+            padding-top: 48px;
+            margin-left: 24px;
+
+            .picture {
+                flex: 1 1 50%;
+                position: relative;
+                margin: 0 24px 0 0;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 1px;
+                    height: 100%;
+                    margin: 0 0 0 -24px;
+                    border-right: 1px solid #c0c0c0;
+                }
+
+                & img {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-top: 3px solid #000;
+                }
+            }
+
+            .text {
+                flex: 1 1 50%;
+
+                &__title {
+                    color: #232227;
+                    font-family: "Lovelo - Black";
+                    font-weight: 900;
+                    line-height: 27px;
+                }
+                &__subtitle {
+                    color: #232227;
+                    font-family: "Justus";
+                    font-style: italic;
+                    line-height: 24px;
+                }
+                &__paragraph {
+                    font-family: "Justus - Oldstyle";
+                    color: #232227b4;
+                    line-height: 24px;
+                }
+                &__link {
+                    color: #c45f5f;
+                    font-family: "Justus";
+                    font-style: italic;
+                    line-height: 36px;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

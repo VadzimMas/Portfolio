@@ -14,10 +14,10 @@ body {
         transform: translate3d(0, 0, 100px);
     }
 }
-@import "0_header.scss";
-@import "1_block.scss";
-@import "2_block.scss";
-@import "3_block.scss";
+@import "header.scss";
+@import "first_block.scss";
+@import "middle_block-1.scss";
+@import "middle_block-2.scss";
+@import "last_block.scss";
 @import "footer.scss";
-
 @import "fonts.scss";
